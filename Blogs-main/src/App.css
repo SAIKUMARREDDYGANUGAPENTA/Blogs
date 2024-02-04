@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+  /* --textcolor: #f1356d */
+  /* --textcolor: #35b9f1 */
+  --textcolor: rgb(250, 143, 143);
+  --headingcolor : #f1356d;
+}
+
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #333;
+  margin-top: 1.5rem;
+}
+.navbar h1 {
+  color: rgb(250, 143, 143);
+
+}
+.navbar .links {
+  margin-left: auto;
+  color: #ddd;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: #ffeded;
+}
+.navbar a:hover {
+  color: var(--textcolor);
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previews / list */
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: var(--textcolor);
+  margin-bottom: 8px;
+}
+.blog-preview a{
+  text-decoration: none;
+}
+
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: var(--headingcolor);
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+
+.blog-details{
+  width: 60%;
+  margin: auto;
+  margin-top: 10vh;
+}
+.blog-details button {
+  background: var(--textcolor);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new blog form */
+.create,.update {
+  max-width: 45vw;
+  margin: 40px auto;
+  text-align: center;
+}
+.create label,.update label {
+  text-align: left;
+  display: block;
+}
+.create h2 ,.update h2{
+  font-size: 20px;
+  color: var(--textcolor);
+  margin-bottom: 30px;
+  
+}
+.create input, .create textarea, .create select,
+.update input, .update textarea, .update select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size:medium;
+  display: block;
+  
+}
+.create button,
+.update button {
+  background: var(--textcolor);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
